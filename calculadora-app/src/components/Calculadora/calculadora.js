@@ -61,11 +61,12 @@ export default {
       this.setarValor();
     },
     log() {
-      this.operador = (num1, num2) => num1 - num2; 
+      this.operador = (num1, num2) => Math.log10(num2); 
       this.setarValor();
     },
     logX() {
-
+      this.operador = (num1, num2) => Math.log10(num1) / Math.log10(num2); 
+      this.setarValor();
     },
     raiz() {
     
