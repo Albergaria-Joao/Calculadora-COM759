@@ -61,7 +61,7 @@ export default {
       this.setarValor();
     },
     log() {
-      this.operador = (num1, num2) => Math.log10(num2); 
+      this.operador = (num1, num2) => Math.log10(num1); 
       this.setarValor();
     },
     logX() {
@@ -69,16 +69,20 @@ export default {
       this.setarValor();
     },
     raiz() {
-    
+      this.operador = (num1, num2) => Math.sqrt(num1);
+      this.setarValor();
     },
     raizX() {
-    
+      this.operador = (num1, num2) => Math.pow(num1, 1/num2);
+      this.setarValor();
     },
     quadrado() {
-    
+      this.operador = (num1, num2) => Math.pow(num1, 2);
+      this.setarValor();
     },
     potencia() {
-    
+      this.operador = (num1, num2) => Math.pow(num1, num2);
+      this.setarValor();
     }
   }
 };
