@@ -59,6 +59,25 @@ export default {
     somar() {
       this.operador = (num1, num2) => num1 + num2;
       this.setarValor();
+    },
+    log() {
+      this.operador = (num1, num2) => num1 - num2; 
+      this.setarValor();
+    },
+    logX() {
+
+    },
+    raiz() {
+    
+    },
+    raizX() {
+    
+    },
+    quadrado() {
+    
+    },
+    potencia() {
+    
     }
   }
 };
