@@ -61,27 +61,30 @@ export default {
       this.setarValor();
     },
     log() {
-      this.operador = (num1, num2) => Math.log10(num1); 
+      this.valorCorrente = 'log';
+      this.operador = (num1, num2) => Math.log10(num2); // apertar o operador (log), o logaritmando e o =
       this.setarValor();
     },
     logX() {
-      this.operador = (num1, num2) => Math.log10(num1) / Math.log10(num2); 
+      this.operador = (num1, num2) => Math.log10(num1) / Math.log10(num2); // apertar o logaritmando, o operador, a base e depois =
       this.setarValor();
     },
     raiz() {
-      this.operador = (num1, num2) => Math.sqrt(num1);
+      this.valorCorrente = "√";
+      this.operador = (num1, num2) => Math.sqrt(num2); // Apertar raiz, depois o número e =
       this.setarValor();
     },
     raizX() {
-      this.operador = (num1, num2) => Math.pow(num1, 1/num2);
+      this.operador = (num1, num2) => Math.pow(num1, 1/num2); // Apertar o radicando, o operador, o índice e o =
       this.setarValor();
     },
     quadrado() {
-      this.operador = (num1, num2) => Math.pow(num1, 2);
+      this.valorCorrente = this.valorCorrente + "²";
+      this.operador = (num1, num2) => Math.pow(num1, 2); // Apertar o valor, o operador e =
       this.setarValor();
     },
     potencia() {
-      this.operador = (num1, num2) => Math.pow(num1, num2);
+      this.operador = (num1, num2) => Math.pow(num1, num2); // Apertar a base, operador, o expoente e =
       this.setarValor();
     }
   }
